@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* RESET (serve para deixar padrão todas as margens e bordas em todos os navegadores) */
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/cidade-invisivel\ \(1\).jpg");
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    background-position: right top; /* Fixa o lado direito superior da imagem conforme a redefinição de tamanho da página */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #000000AA; /* Hexadecimal para trabalhar com a opacidade */
+    height: 70px;
+}
+
+main {
+    /* background-color: tomato; */
+    flex-grow: 1;
+}
+
+footer {
+    /* background-color: turquoise; */
+    height: 40px;
+}
