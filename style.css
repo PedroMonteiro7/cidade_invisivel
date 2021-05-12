@@ -9,11 +9,14 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url("img/cidade-invisivel\ \(1\).jpg");
+    background-color: #00000055; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
     background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
     background-position: right top; /* Fixa o lado direito superior da imagem conforme a redefinição de tamanho da página */
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
+    color: white;
 }
 
 header {
@@ -31,7 +34,7 @@ header {
 
 .links ul {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Dá um espaço entre os itens, separando-os */
     list-style-type: none; /* Tira as "bolinhas" da lista */
 }
 
@@ -48,11 +51,67 @@ header {
 }
 
 main {
-    /* background-color: tomato; */
+    padding: 25vh 10vw;
     flex-grow: 1;
 }
 
+main h2 {
+    font-size: 30px;
+}
+
+main h1 {
+    font-size: 70px;
+}
+
+main p {
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 800px; /* Largura máxima, quebra o texto */
+}
+
+/* Botão "Veja o trailer" */
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: goldenrod;
+    margin-top: 30px; /* Espaçamento  entre o texto (p) e o botão */
+    border-radius: 2px; /* Propriedade que arredonda */
+    transition: all .5s;
+
+}
+
+/* Efeito do botão "Veja o Trailer" */
+main a:hover {
+    border: solid 1px goldenrod; /* Serve para, nesse caso, manter uma borda da cor anterior ao efeito */
+    background-color: black;
+}
+
 footer {
-    /* background-color: turquoise; */
+    text-align: center;
     height: 40px;
+}
+
+.butterfly {
+    position: absolute;
+    width: 60px;
+    top: 90vh;
+    left: 90vw;
+    filter: brightness(10%); /* Para deixá-la escura */
+    animation: voar 20s linear infinite; /* Chamando a animação */
+}
+
+/* Animação da borboleta */
+@keyframes voar {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-90vw, -90vh);
+    }
 }
