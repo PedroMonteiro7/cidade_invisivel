@@ -13,11 +13,38 @@ body {
     background-position: right top; /* Fixa o lado direito superior da imagem conforme a redefinição de tamanho da página */
     display: flex;
     flex-direction: column;
+    font-family: 'Karla', sans-serif;
 }
 
 header {
     background-color: #000000AA; /* Hexadecimal para trabalhar com a opacidade */
     height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw; /* Também poderia ser feito por cada lado (padding-left e padding-right) */
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none; /* Tira as "bolinhas" da lista */
+}
+
+.links a {
+    color: white;
+    text-decoration: none; /* Tira o sublinhado */
+    font-size: 20px;
+    user-select: none; /* Impossibilita a seleção do texto */
+    transition: all .75s; /* É uma transição para mudar do branco para o vermelho mais delicadamente, de forma gradativa */
+}
+
+.links a:hover { /* Efeito ao passar o mouse */
+    color: red; /* Efeito de mudança de cor */
 }
 
 main {
