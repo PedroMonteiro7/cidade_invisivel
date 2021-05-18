@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* RESET (serve para deixar padrão todas as margens e bordas em todos os navegadores) */
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/curupira.jpg");
+    background-color: #00000055; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    background-position: right top; /* Fixa o lado direito superior da imagem conforme a redefinição de tamanho da página */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+header {
+    background-color: #000000AA; /* Hexadecimal para trabalhar com a opacidade */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw; /* Também poderia ser feito por cada lado (padding-left e padding-right) */
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links ul {
+    display: flex;
+    gap: 20px; /* Dá um espaço entre os itens, separando-os */
+    list-style-type: none; /* Tira as "bolinhas" da lista */
+}
+
+.links a {
+    color: white;
+    text-decoration: none; /* Tira o sublinhado */
+    font-size: 20px;
+    user-select: none; /* Impossibilita a seleção do texto */
+    transition: all .75s; /* É uma transição para mudar do branco para o vermelho mais delicadamente, de forma gradativa */
+}
+
+.links a:hover { /* Efeito ao passar o mouse */
+    color: red; /* Efeito de mudança de cor */
+}
+
+main {
+    padding: 15vh 10vw;
+    height: 90px;
+    /* display: flex; */
+}
+
+main h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 3em; color: #fffdd900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 100px; color: #fffdd900;
+}
+
+main p {
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 400px; /* Largura máxima, quebra o texto */
+}
+
+.personagem {
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-around;
+    flex-direction: row; */
+}
+
+footer {
+    text-align: center;
+    height: 40px;
+}
+
