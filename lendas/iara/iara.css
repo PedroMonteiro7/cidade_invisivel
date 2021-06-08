@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/imgIaraoriginal\ \(1\).jpg");
+    background-color: #00000066;
+    background-blend-mode: darken;
+    background-position: right top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+header{
+    background-color: #000000AA;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+}
+img{
+    width: 115px;
+}
+.links > ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.links a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 22px;
+    user-select: none;
+    transition: all 1s;
+}
+.links a:hover {
+    color: red;
+}
+main{
+    flex-grow: 1;
+    padding: 25vh 10vw;
+    flex-direction: row;
+}
+main h2{
+font-size: 30px;
+}
+main h1{
+     position: relative;
+     font-size: 100px;
+     -webkit-text-stroke: 2px white;
+     color: transparent;
+}
+main h1::after{
+    content: "Iara";
+    -webkit-text-stroke: 3px #111;
+    color: transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
+
+}
+.lenda{
+    transform: rotate(270deg);
+    color: red;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6 6vw;
+}
+.texto{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 400px;
+    max-width: 550px;
+}
+.informacoes{
+    display: flex;
+    flex-direction: row;
+}
+.sobreAtor{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+}
+.ator{
+    font-size: 15px;
+}
+.sobrePersonagem{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+}
+.personagem{
+    font-size: 15px;
+}
+.sobreEntidade{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    width: 150px;
+}
+.entidade{
+    font-size: 15px;
+}
+footer{
+    flex-grow: 1;
+    height: 40px;
+    text-align: center;
+}
+
