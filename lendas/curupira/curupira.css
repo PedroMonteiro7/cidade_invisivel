@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 body {
@@ -31,10 +32,9 @@ header {
     width: 120px;
 }
 
-.links ul {
+.links > ul {
     display: flex;
     gap: 20px; /* Dá um espaço entre os itens, separando-os */
-    list-style-type: none; /* Tira as "bolinhas" da lista */
 }
 
 .links a {
@@ -54,7 +54,7 @@ main {
     height: 90px;
 }
 
-main h1 {
+main h1 { /* Título com letra vazada */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     font-size: 3em; color: #fffdd900;
