@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    list-style-type:none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-image: url("Img/boto.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-color: #00000011;
+    background-blend-mode: darken;
+    color: white;
+}
+.logo img{
+    width: 130px;
+    margin-top: 5px;
+}
+
+header{
+    height: 12%;
+    background-color: #00000077;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    font-family: 'Karla', sans-serif;
+}
+
+.links a{
+    user-select: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 1s;
+    align-items: center;
+}
+.links a:hover{
+    color: red;
+}
+
+.links > ul{
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    flex-grow: 1;
+    /* 1º: top/em cima  2ºrigth/direita   
+    3ºdown/baixo  4ºleft/esquerda */
+    padding: 40px 600px 60px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1{
+    position: relative;
+    font-size: 500%;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-family: Helvetica, sans-serif;
+    /* / / Efumaçada*/
+    /* text-shadow: 10px 15px 0px black; */
+    padding-left: 90px ;
+}
+
+/* Se colocar before, temos a palavra antes, se colocarmos after, temos a palavra depois */
+main h1::after{
+    content: "Boto-cor-de-rosa";
+    -webkit-text-stroke: 4px #000000DD;
+    color: transparent;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    /* Vai para trás */
+    z-index: -1;
+    padding-left: 90px ;
+}
+
+main p{
+    font-size: 150%;
+    padding-right: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+hr{
+    border-color: red;
+    height: 80px;
+}
+
+div.descricao{
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+    list-style-type: none;
+}
+
+div.descricao p{
+    width: 540px;
+    height: 220px;
+    padding-left: 220px;
+}
+
+div.descricao h3{
+    transform: rotate(270deg); 
+    color: rgb(243, 60, 60); 
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 150px;
+    top: 360px;
+}
+
+.infos p{
+    font-size: 25px;
+}
+
+div.infos{
+    padding-left: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+
+.infos ul{
+    gap: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    height: 12%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}

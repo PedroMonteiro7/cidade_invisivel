@@ -1,0 +1,29 @@
+.menu{
+    display: flex;
+}
+
+.menu li:hover > .submenu{
+    display: block;
+}
+
+.submenu{
+    /* margin-top: 9px;   */
+    font-size: 18px;
+    position: absolute;
+    display: none;
+}
+
+.submenu a{
+
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #00000077;
+}
+
+.submenu a:hover{
+    border-left: 5px solid red;
+}

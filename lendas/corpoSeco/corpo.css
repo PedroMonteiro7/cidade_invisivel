@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+ 
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/corpoSeco.jpg");
+    background-color: #00000066;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+ 
+header {
+    background-color: #000000AA;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+ 
+.logo img {
+    width: 140px;
+}
+ 
+.links > ul {
+    display: flex;
+    gap: 20px;
+    color: white;
+    list-style-type: none;
+}  
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
+    user-select: none;
+    color: white;
+}
+
+.links a:hover {
+    color: red;
+}
+
+main {
+    padding: 20vh 10vw;
+    flex-grow: 1;
+}
+ 
+main h1 {
+    position: relative;
+    font-size: 100px;
+    font-family: Helvetica;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: transparent;
+    
+}
+ 
+main h1::after {
+    content: "Corpo-Seco";
+    -webkit-text-stroke: 3px #111;
+    color:transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
+}
+
+.lenda {
+    transform: rotate(270deg);
+    color: #D81F26;
+    font-size: 30px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5 5vw;
+}
+
+.textos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 300px;
+}
+
+.informacao {
+    display: flex;
+    flex-direction: row;
+}
+    
+.sobreAtor {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+}
+
+.ator {
+    font-size: 10px;
+}
+
+.sobrePersonagem {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+}
+
+.personagem {
+    font-size: 10px;
+}
+
+.sobreEntidade {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    width: 150px;
+}
+
+.entidade {
+    font-size: 10px;
+}
+
+footer {
+    text-align: center;
+    height: 40px;
+}
+ 
