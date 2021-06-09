@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Cidade Invisível</title>
 </head>
 <body>
@@ -15,10 +16,19 @@
             <img src="img/netflix.png" alt="logoNetflix">
         </a>
         <nav class="links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="http://127.0.0.1:5500/lendas/curupira/curupira.html">Lendas</a></li>
-                <li><a href="#">Trailer</a></li>
+            <ul class="menu">
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li>
+                    <a href="#">Lendas <span>&#9660;</span></a>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:5500/lendas/curupira/curupira.html">Curupira</a></li>
+                        <li><a href="http://127.0.0.1:5500/lendas/cuca/cuca.html">Cuca</a></li>
+                        <li><a href="">Iara</a></li>
+                        <li><a href="http://127.0.0.1:5500/lendas/saci/saci.html">Saci Pererê</a></li>
+                        <li><a href="http://127.0.0.1:5500/lendas/boto/boto.html">Boto Cor-de-rosa</a></li>
+                        <li><a href="http://127.0.0.1:5500/lendas/corpoSeco/corpo.html">Corpo-Seco</a></li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/watch?v=GodwQKNXIYk" target="_blank">Trailer</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
         </nav>
